@@ -1,0 +1,50 @@
+<ion-header>
+
+  </ion-header>
+  
+  <ion-content padding text-center>
+    <br>
+    <h3>EASY ARKIT</h3>
+    <br>
+    <form>
+  
+      <ion-list>
+        <ion-label>Iniciar Sesión</ion-label>
+        <ion-item>
+          <ion-label floating>Usuario</ion-label>
+          <ion-input type="text" name="txtUsuario" ID="txtUsuario"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>Contraseña</ion-label>
+          <ion-input type="password" name="txtContraseña" ID="txtContraseña"></ion-input>
+        </ion-item>
+        <div padding>
+          <button ion-button block>Iniciar</button>
+  
+        </div>
+      </ion-list>
+      <!-- <button ion-button block type="submit"  >Ingresar</button>-->
+  
+  
+    </form>
+    <button ion-button clear style="FONT-SIZE:9pt;" (click)="recoverPass()">
+      Recuperar contraseña
+    </button>
+  
+    <br><br><br>
+    <div>
+      <button ion-button clear style="FONT-SIZE:9pt;" (click)="userRegister()">
+        Registrar usuario
+      </button>
+      <br>
+      <button ion-button clear style="FONT-SIZE:9pt;">
+        Registrar empresa
+      </button>
+    </div>
+  
+  
+  </ion-content>
+  
+  <!--style="FONT-SIZE:11pt;
+      BACKGROUND-COLOR: #74a0d3; color:#74a0d3"-->
