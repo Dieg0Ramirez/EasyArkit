@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RecuperarContraPage } from '../recuperar-contra/recuperar-contra';
 import { RegistroUsuPage } from '../index.paginas';
+import { RegistroEmprePage } from '../index.paginas';
 
 /**
  * Generated class for the LoginPage page.
@@ -29,7 +30,11 @@ export class LoginPage {
     this.navCtrl.push( RecuperarContraPage)
   }
 
-  userRegister(){
+  userRegisterUsuario(){
     this.navCtrl.push(RegistroUsuPage)
+  }
+
+  userRegisterEmpresa(){
+    this.navCtrl.push(RegistroEmprePage)
   }
 }

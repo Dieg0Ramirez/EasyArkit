@@ -6,7 +6,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 
-import {LoginPage,RecuperarContraPage,RegistroUsuPage, RegistroEmprePage} from "../pages/index.paginas";
+import {LoginPage,
+  RecuperarContraPage,
+  RegistroUsuPage, 
+  RegistroEmprePage,
+  VerificarCodPage,
+  EditarContraPage
+} from "../pages/index.paginas";
 
 
 @NgModule({
@@ -15,7 +21,9 @@ import {LoginPage,RecuperarContraPage,RegistroUsuPage, RegistroEmprePage} from "
     LoginPage,
     RecuperarContraPage,
     RegistroUsuPage,
-    RegistroEmprePage
+    RegistroEmprePage,
+    VerificarCodPage,
+    EditarContraPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +35,9 @@ import {LoginPage,RecuperarContraPage,RegistroUsuPage, RegistroEmprePage} from "
     LoginPage,
     RecuperarContraPage,
     RegistroUsuPage,
-    RegistroEmprePage
+    RegistroEmprePage,
+    VerificarCodPage,
+    EditarContraPage
   ],
   providers: [
     StatusBar,

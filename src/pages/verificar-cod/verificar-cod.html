@@ -1,14 +1,29 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Verificar</ion-title>
+    <ion-title text-center>Verificar</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding text-center>
+  <br><br><br>
   <h6>
-    Comprueba si recibiste un correo electronico con tu código
+    Comprueba si recibiste un correo electronico con tu código, sino pulsa el boton "¿Generar nuevo codigo".
   </h6>
+
+  <div>
+    <button ion-button clear [navPush]="enviarCodigo">
+      ¿Generar nuevo codigo?
+    </button>
+  </div>
+  <ion-item>
+      <ion-label floating>Ingrese el codigo</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <br><br>
+    <button ion-button block (click)="validarcodigo()">
+      Continuar 
+    </button>
 </ion-content>
